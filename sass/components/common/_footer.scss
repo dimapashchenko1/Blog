@@ -205,7 +205,10 @@
 }
 
 .footer-pay__item {
+  transition: var(--transition-function);
+
   &:hover, &:focus {
+    transition: var(--transition-function);
     box-shadow: var(--shadow-pay);
   }
   @media (min-width: $desktop) {
@@ -385,7 +388,10 @@
 }
 
 .info__svg {
+  transition: var(--transition-function);
+
   &:hover, &:focus {
+    transition: var(--transition-function);
     fill: var(--green-color);
   }
 }

@@ -16,7 +16,7 @@
   background-color: var(--background-color-black);
   width: 100%;
   height: 70px;
-  padding: 14px 0px 13px 20px;
+  padding: 14px 0px 13px 0px;
   @media (min-width: $desktop) {
     width: 100%;
     height: 40px;
@@ -25,13 +25,30 @@
 .header__list {
   display: flex;
   justify-content: center;
+  align-items: center;
   @media (max-width: $desktop) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 9px;
+    grid-template-areas:
+    'alert learn'
+    'ip isp';
+    row-gap: 9px;
+    column-gap: 15px;
   }
 }
+
+.set1 {
+  grid-area: alert;
+}
+.set2 {
+  grid-area: ip;
+}
+.set3 {
+  grid-area: isp;
+}
+.set4 {
+  grid-area: learn;
+}
+
 .header__item {
   font-family: 'Roboto';
   font-style: normal;
@@ -57,9 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-  }
-  &:hover, &:focus {
-    color: var(--green-color);
+  
   }
   @media (min-width: $desktop) {
     margin-right: 32px;
