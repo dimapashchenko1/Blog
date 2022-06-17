@@ -1,0 +1,248 @@
+.main__container {
+  padding-top: 31px;
+  @media (min-width: $desktop) {
+    padding-top: 20px;
+  }
+}
+
+.main__card {
+  width: 335px;
+  height: 600px;
+  border-bottom: none;
+  background: var(--white-color);
+  border: 1px solid var(--border-color-card-grey);
+  border-radius: 6px;
+  box-shadow: 5px 8px 8px 1px rgb(0 0 0 / 5%);
+
+  @media (min-width: $desktop) {
+    height: 400px;
+    width: 100%;
+    display: flex;
+  }
+}
+.card__img {
+  @media (min-width: $desktop) {
+    width: 600px;
+    height: 400px;
+  }
+  &--post {
+    @media (min-width: $desktop) {
+      width: 280px;
+      height: 180px;
+    }
+  }
+}
+
+.card__info {
+  @media (min-width: $desktop) {
+    padding: 60px 60px 35px;
+    &--post {
+      width: 520px;
+      padding: 0 20px 0 40px;
+    }
+  }
+  &--hero {
+    padding: 27px 30px 0;
+    @media (min-width: $desktop) {
+      padding: 60px 60px 35px;
+      &--hero {
+        border: 1px solid var(--border-color-grey);
+      }
+    }
+  }
+}
+
+.card__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--light-black-color);
+  margin-bottom: 14px;
+  @media (min-width: $desktop) {
+    margin-bottom: 84px;
+  }
+  &--post {
+    @media (min-width: $desktop) {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.card__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--light);
+  margin-bottom: 12px;
+  &--post {
+    margin-bottom: 7px;
+  }
+}
+
+.card__span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--grey-color);
+}
+
+.tags__list {
+  display: flex;
+  margin-bottom: 12px;
+  &--posts {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    @media (min-width: $desktop) {
+      margin-bottom: 4px;
+    }
+  }
+  @media (min-width: $desktop) {
+    &--main {
+      margin-bottom: 0px;
+      width: 667px;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+.tags__item {
+  margin-right: 5px;
+}
+
+.tags-additionally__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--light-black-color);
+}
+
+.tags__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--green-color);
+  &--hero {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--green-color);
+  }
+  @media (min-width: $desktop) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    &--post {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+.tags__flex {
+  display: flex;
+  align-items: center;
+}
+
+.card__svg {
+  fill: var(--white-color);
+}
+
+.card__comment {
+  display: flex;
+  align-items: center;
+}
+
+.card__span {
+  margin-left: 9px;
+}
+
+.main__tags {
+  display: none;
+  @media (min-width: $desktop) {
+    display: flex;
+    padding: 21px 32px;
+    margin-top: 30px;
+    height: 60px;
+    background: var(--white-color-tags);
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+.tags__wrapper {
+  display: flex;
+  width: 147px;
+  justify-content: space-between;
+  margin-left: 200px;
+}
+
+.dashbord-main__flex {
+  display: flex;
+  @media (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.global__search {
+  height: 60px;
+  background: var(--white-color);
+  border: 1px solid var(--border-color-card-grey);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--background-color-black);
+  padding: 20px;
+  @media (min-width: $desktop) {
+    border: 1px solid var(--border-color-card-grey);
+    border-radius: 4px;
+    color: var(--background-color-black);
+    width: 340px;
+  }
+  @media (max-width: $desktop) {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+}
+.global__input {
+  position: absolute;
+  border: none;
+  margin-left: 58px;
+}
+
+.global__svg {
+  position: relative;
+  left: 5px;
+}

@@ -1,0 +1,116 @@
+.posts__title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 44px;
+color: var(--background-color-black);
+
+@media (max-width: $desktop) {
+    margin-top: 40px;
+margin-bottom: 40px;
+  }
+}
+
+.card {
+    @media (max-width: $desktop) {
+    border-bottom: 1px solid var(--border-color-grey);
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+      }
+
+      @media (min-width: $desktop) {
+        display: flex;
+          }
+
+    
+}
+
+.posts__btn {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+    border: 1px solid var(--green-color);
+border-radius: 30px;
+color: var(--green-color);
+background-color: var(--white-color);
+width: 100%;
+height: 40px;
+margin-top: 60px;
+margin-bottom: 70px;
+&:hover,
+    &:focus {
+      color: var(--white-color);
+      background: var(--background-gradient-green);
+      transition: var(--transition-function);
+    }
+@media (min-width: $desktop) {
+    width: 260px;  
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+      
+  }
+}
+
+.post__item:nth-child(-n+3) {
+    @media (max-width: $desktop) {
+        display: none;
+        
+      }
+}
+
+
+
+
+
+.dashbord-main__flex {
+    display: flex;
+   
+    @media (min-width: $desktop) {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+    @media (max-width: $desktop) {
+        flex-direction: column-reverse;
+      }
+}
+
+.main__dashbord {
+    @media (min-width: $desktop) {
+        display: flex;
+      }
+}
+
+.posts__list {
+    @media (min-width: $desktop) {
+        border-right: 1px solid var(--border-color-grey);
+      }
+}
+
+.post__item {
+    @media (min-width: $desktop) {
+        padding-bottom: 60px;
+        border-bottom: 1px solid var(--border-color-grey);
+        margin-bottom: 30px;
+      }
+}
+
+.dashbord-main__global {
+    @media (min-width: $desktop) {
+        
+        margin-left: 60px;
+      }
+}
