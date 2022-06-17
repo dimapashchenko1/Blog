@@ -25,7 +25,7 @@
 .header__list {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   @media (max-width: $desktop) {
     display: grid;
     grid-template-areas:
